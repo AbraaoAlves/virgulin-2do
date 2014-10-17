@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CRUD Node.js</title>
+		
+		 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="/stylesheets/foundation.css"/>
+		<link rel="stylesheet" href="/fonts/foundation-icons.css"/>
+		<link rel="stylesheet" href="/stylesheets/app.css"/>
+
+	</head>
+	<body>
+
+		<header class="site-header">
+
+			<div class="row">
+				
+				<nav class="top-bar" data-topbar> 
+					
+					<ul class="title-area"> 
+						
+						<li class="name"> 
+							<h1>
+								<a href="/">Virgulin Notes</a>
+							</h1> 
+						</li>
+						
+						 <li class="toggle-topbar menu-icon">
+							<a href="#"><span>Menu</span></a>
+						</li> 
+					</ul>
+					 
+					 <section class="top-bar-section">
+						 
+						 <ul class="right"> 
+							 
+							 <li class="has-form">
+								<div class="row collapse">
+								  
+								  <form method="post" action="/notes/search">
+									  
+									  <div class="large-12 small-12 medium-12 columns">
+											<input placeholder="buscar notas" name="search_notes" type="text">
+									  </div>
+									 
+								  </form>
+								  
+								</div>
+							 </li>
+						 </ul> 
+						 
+						
+						 <ul class="main-menu-wrap left"> 
+							 
+							<li class="menu-item main-menu-item create-note"><a href="/notes/create">Criar nota</a></li>
+							<li class="menu-item main-menu-item view-archived-notes"><a href="/notes/archived">Ver notas arquivadas</a></li>
+							
+						 </ul> 
+					 </section> 
+				 </nav>
+
+			</div>
+			
+		</header>
+		
+		<main class="site-main">

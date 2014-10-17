@@ -1,0 +1,22 @@
+{
+	"name": "CRUD_Node",
+	"version": "0.0.1",
+	"description":"",
+	"main":"app.js",
+  	"scripts": {
+    	"start": "node app.js"
+	},
+	"dependencies": {
+		"express": "*",
+		"ejs": "*",
+		"express-load":"latest",
+		"node-livereload":"*",
+		"mysql":"*"
+	},
+	"engines": {
+    "node": "0.10.22"
+  	},
+	"author": "Cicero Viana"
+}
+
+

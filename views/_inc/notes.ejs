@@ -1,0 +1,40 @@
+<div class="row">
+    
+<ul class="notes small-block-grid-1 medium-block-grid-2 large-block-grid-3">
+
+<% notes.forEach(function(note) { %>
+   
+     <li id="note-id-<%- note.ID_note %>" class="note">
+        
+        <div class="note-wrap">
+            
+            <div class="note-content">
+                <h3><%- note.TITLE_note %></h3>
+                <div class="entry note-entry">
+                    <%- note.DESC_note %>
+                </div>
+            </div>
+            
+            <div class="note-actions-wrap">
+               
+               <a href="/notes/<%- note.ID_note %>/update" class="note-action fi-page-edit">editar</a>
+               <a href="/notes/<%- note.ID_note %>/delete" class="note-action fi-page-delete">excluir</a>
+               
+               <% if(note.STATUS_note == 'published') { %>
+                
+                  <a href="/notes/<%- note.ID_note %>/archive" class="note-action fi-archive">arquivar</a>
+               
+                <% } else { %>
+                
+                  <a href="/notes/<%- note.ID_note %>/restore" class="note-action">restaurar</a>
+                
+                <% } %>
+                    
+            </div>
+            
+        </div>
+        
+    </li>
+ <% }) %>
+</ul>
+</div>

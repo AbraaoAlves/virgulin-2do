@@ -1,0 +1,27 @@
+	  
+<div class="row">
+  <form action="" method="POST" class="form-note">
+
+	
+		 
+		 <div class="large-12 columns">
+			<label>Titulo
+			  <input type="text" name="title_note" id="title_note" value="<%= note.length > 0 && note[0].TITLE_note ? note[0].TITLE_note : '' %>"/>
+			</label>
+		  </div>
+
+		  <div class="large-12 columns">
+			<label>Descrição
+			  <textarea name="desc_note" id="desc_note"><%= note.length > 0 && note[0].DESC_note ? note[0].DESC_note : '' %> </textarea>
+			</label>
+		  </div>
+
+		<div class="large-12 columns">
+
+		   <input type="submit" class="button tiny" value="Salvar"/>
+
+		
+		</div>
+
+	</form>
+</div>

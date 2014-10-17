@@ -1,0 +1,29 @@
+body {
+  padding: 50px;
+}
+
+a { color: #00B7FF;}
+
+
+.footer p {text-align: center;}
+
+/*fix error in bootstrap */
+.top-bar .has-form input[type=text] {height:1.96rem;}
+.top-bar .title-area a {text-align: left;}
+
+.site-header h1 {text-align: center; color:#222;}
+.site-header .title-area  {background: #B09055;}
+
+
+.site-main {margin:40px 0;} 
+
+
+.form-note textare {resize: none;}
+
+
+.note-wrap{ background: #f9f9f9; padding:10px;}
+.note-wrap:hover {background: #eee;}
+
+.note-actions-wrap {font-size:0.9em; margin:10px 5px; text-align: center;}
+.note-action {color: #a5a5a5; padding: 0 5px;}
+.note-action:before{margin-right: 3px;} 
